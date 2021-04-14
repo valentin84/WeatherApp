@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script defer src= 'https://maps.googleapis.com/maps/api/js?key=**********&libraries=places&callback=initMap'></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon-container">
+                <img src="https://openweathermap.org/img/wn/02n@2x.png" alt="weather icon" class="icon" data-icon />
+            </div>
+        </div>
+        <div class="content">
+            <div class="general-info">
+                <div class="location" data-location >Location</div>
+                <div class="status" data-status >The weather is:</div>
+            </div>
+            <div class="details-section">
+                <div class="detail">
+                    <div class="title">Wind (km/h)</div>
+                    <div class="value" data-wind >TBD</div>
+                </div>
+                <div class="detail bordered">
+                    <div class="title">Temperature (°C)</div>
+                    <div class="value" data-temperature >TBD</div>
+                </div>
+                <div class="detail">
+                    <div class="title">Feels like (°C)</div>
+                    <div class="value" data-feels >TBD</div>
+                </div>
+            </div>
+            <div class="city-search-container">
+                <input type="text" class="city-search" data-city-search placeholder="Enter Location">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
